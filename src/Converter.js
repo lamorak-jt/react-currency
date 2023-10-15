@@ -1,8 +1,8 @@
 import React from 'react';
 import { json, checkStatus } from './utils';
 import Dropdown from 'react-dropdown';
-import List from './List';
 import 'react-dropdown/style.css';
+import './Converter.css';
 
 class Converter extends React.Component {  
   constructor(props) {
@@ -105,11 +105,11 @@ class Converter extends React.Component {
     
     return (      
     <div>
-      <input name='base-amount' type='number' value={baseAmount} onChange={this.onChangeBaseAmount} />
+      <input class='converter-amount' name='base-amount' type='number' value={baseAmount} onChange={this.onChangeBaseAmount} />
       <div type='dropdown' name='base-currency'>
         <Dropdown options={dropdownOptions} onChange={this.onSelectBase} value={baseCurrency} />
       </div>
-      <input name='target-amount' type='number' value={targetAmount} onChange={this.onChangeTargetAmount} />
+      <input class='converter-amount' name='target-amount' type='number' value={targetAmount} onChange={this.onChangeTargetAmount} />
       <div type='dropdown' name='target-currency'>
         <Dropdown options={dropdownOptions} onChange={this.onSelectTarget} value={targetCurrency} />
       </div>
