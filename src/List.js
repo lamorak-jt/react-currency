@@ -2,6 +2,7 @@ import React from 'react';
 import { json, checkStatus } from './utils';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
+import './List.css';
 
 const dropdownDefault = 'USD';
 
@@ -51,13 +52,16 @@ class List extends React.Component {
     let { baseCurrency, rates, dropdownOptions } = this.state;
 
     return (
-      <div>
-        <div type='dropdown'>
+      <div class='currency-list'>
+        <div class='list-dropdown' type='dropdown'>
           <Dropdown options={dropdownOptions} onChange={this.onSelect} value={baseCurrency} />
         </div>
 
-        <div>{ Object.keys(rates).map(key => (
-                <div key={key}> {key} { rates[key]} </div>))}            
+        <div class='rates-list'>{ Object.keys(rates).map(key => (
+            <div class='rate-entry'>
+              <div class='currency-code' key={key}> {key}:</div>
+              <div class='currency-rate'>{ rates[key]}</div>
+            </div> ))}
         </div>
       </div>
       )

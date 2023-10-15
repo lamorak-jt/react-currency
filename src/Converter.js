@@ -36,7 +36,7 @@ class Converter extends React.Component {
           if (element == 'base') {
             this.setState({ rate: thisRate, targetAmount: (this.state.baseAmount * thisRate).toFixed(2), baseCurrency: baseCurrency});
           } else if (element == 'target') {
-              this.setState({ rate: thisRate, baseAmount: (this.state.targetAmount * thisRate).toFixed(2), targetCurrency: targetCurrency});
+              this.setState({ rate: thisRate, baseAmount: (this.state.targetAmount / thisRate).toFixed(2), targetCurrency: targetCurrency});
             }
           })        
         .catch((error) => {

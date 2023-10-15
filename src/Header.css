@@ -1,0 +1,46 @@
+.navbar {
+  justify-content: left;
+  padding-left: 20px;
+}
+
+.navbar-brand {
+  float: left;
+  display: block;
+  color: #222;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.33333;
+}
+
+.nav-link {
+  color: #222;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+/* Navbar media queries */
+@media (max-width: 1128px) {
+  .navbar-nav, .nav-item {
+    font-size: 14px;
+    line-height: 1.28571; 
+    padding: 8px 8px;
+    position: relative;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 1128px) {
+  .navbar-nav, .nav-item .menu-item a {
+    font-size: 16px;
+    line-height: 1.28571; 
+    padding: 10px 8px;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .nav-link {
+    margin: 10px;
+  }
+}

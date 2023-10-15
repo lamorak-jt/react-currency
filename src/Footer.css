@@ -1,0 +1,14 @@
+/* Footer */
+.my-footer {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  background-color: #f7f7f7;
+  text-align: right;
+}
+
+.footer-item {  
+  font-size: 14px;
+  line-height: 1.27;
+  margin-top: 16px;
+  padding-right: 40px;
+}
