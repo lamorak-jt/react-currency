@@ -28,11 +28,13 @@
 @media (max-width: 950px){
   .rates-list {
     grid-template-columns: repeat(3,1fr);
+    font-size: 0.9em;
   }
 }
 
 @media (max-width: 744px){
   .rates-list {
     grid-template-columns: repeat(2,1fr);
+    font-size: 0.8em;
   }
 }

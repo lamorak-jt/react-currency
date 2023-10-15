@@ -104,14 +104,19 @@ class Converter extends React.Component {
     let { baseCurrency, targetCurrency, rate, baseAmount, targetAmount, dropdownOptions } = this.state;
     
     return (      
-    <div>
-      <input class='converter-amount' name='base-amount' type='number' value={baseAmount} onChange={this.onChangeBaseAmount} />
-      <div type='dropdown' name='base-currency'>
-        <Dropdown options={dropdownOptions} onChange={this.onSelectBase} value={baseCurrency} />
+    <div class='container converter-container'>
+      <div class='converter-base'>
+        <input class='converter-amount' name='base-amount' type='number' value={baseAmount} onChange={this.onChangeBaseAmount} />
+        <div class='converter-dropdown' type='dropdown' name='base-currency'>
+          <Dropdown options={dropdownOptions} onChange={this.onSelectBase} value={baseCurrency} />
+        </div>
       </div>
-      <input class='converter-amount' name='target-amount' type='number' value={targetAmount} onChange={this.onChangeTargetAmount} />
-      <div type='dropdown' name='target-currency'>
-        <Dropdown options={dropdownOptions} onChange={this.onSelectTarget} value={targetCurrency} />
+      <div class='converter-equals'> = </div>
+      <div class='converter-target'>
+        <input class='converter-amount' name='target-amount' type='number' value={targetAmount} onChange={this.onChangeTargetAmount} />
+        <div class='converter-dropdown' type='dropdown' name='target-currency'>
+          <Dropdown options={dropdownOptions} onChange={this.onSelectTarget} value={targetCurrency} />
+        </div>
       </div>
     </div>
     )
