@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/react-currency/static/css/main.073c9b0a.css",
-    "main.js": "/react-currency/static/js/main.b0029272.js",
-    "static/js/787.a6c28b78.chunk.js": "/react-currency/static/js/787.a6c28b78.chunk.js",
-    "static/media/logo.svg": "/react-currency/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/react-currency/index.html",
-    "main.073c9b0a.css.map": "/react-currency/static/css/main.073c9b0a.css.map",
-    "main.b0029272.js.map": "/react-currency/static/js/main.b0029272.js.map",
-    "787.a6c28b78.chunk.js.map": "/react-currency/static/js/787.a6c28b78.chunk.js.map"
+    "main.css": "/first-react-app/static/css/main.4aeb1dec.css",
+    "main.js": "/first-react-app/static/js/main.88c7ae0a.js",
+    "static/js/787.a6c28b78.chunk.js": "/first-react-app/static/js/787.a6c28b78.chunk.js",
+    "index.html": "/first-react-app/index.html",
+    "main.4aeb1dec.css.map": "/first-react-app/static/css/main.4aeb1dec.css.map",
+    "main.88c7ae0a.js.map": "/first-react-app/static/js/main.88c7ae0a.js.map",
+    "787.a6c28b78.chunk.js.map": "/first-react-app/static/js/787.a6c28b78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b0029272.js"
+    "static/css/main.4aeb1dec.css",
+    "static/js/main.88c7ae0a.js"
   ]
 }
