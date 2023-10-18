@@ -21,4 +21,27 @@
 
 .converter-equals {
   font-size: 2em;
+  text-align: center;
 }
+
+.container-canvas-chart{
+  max-width: 75%;
+  height: 300px;
+}
+
+/* Converter chart media queries */
+@media (max-width: 950px){
+  .container-canvas-chart{
+    max-width: 85%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 744px){
+  .container-canvas-chart{
+    max-width: 95%;
+    height: 200px;
+  }
+}
+
+
